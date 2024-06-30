@@ -5,13 +5,13 @@ const path = require('path');
 const schedule = require('node-schedule');
 
 const app = express();
-const PORT = 3020
-const VEHICLES_FILE_PATH = path.join(__dirname, 'vehicles.json');
-const ROUTES_FILE_PATH = path.join(__dirname, 'trips.json');
-const TRIPS_FILE_PATH = path.join(__dirname, 'routes.json');
-const SHAPES_FILE_PATH = path.join(__dirname, 'shapes.json');
-const STOPS_FILE_PATH = path.join(__dirname, 'stops.json');
-const STOP_TIMES_FILE_PATH = path.join(__dirname, 'stopTimes.json');
+const PORT = 3001
+const VEHICLES_FILE_PATH = path.join(__dirname + '/public/', 'vehicles.json');
+const ROUTES_FILE_PATH = path.join(__dirname + '/public/', 'trips.json');
+const TRIPS_FILE_PATH = path.join(__dirname + '/public/', 'routes.json');
+const SHAPES_FILE_PATH = path.join(__dirname + '/public/', 'shapes.json');
+const STOPS_FILE_PATH = path.join(__dirname + '/public/', 'stops.json');
+const STOP_TIMES_FILE_PATH = path.join(__dirname + '/public/', 'stopTimes.json');
 
 const vehiclesKeys = ['TxUpzDZrY1Snplzx5ty1nTXAr4donKGQQkYQDtBC', 'TxUpzDZrY1Snplzx5ty1nTXAr4donKGQQkYQDtBC']
 let keysIndex = 0

@@ -5,7 +5,7 @@ const path = require('path');
 const schedule = require('node-schedule');
 
 const app = express();
-const PORT = 3000
+const PORT = process.env.port || 3000
 const VEHICLES_FILE_PATH = path.join(__dirname + '/public/', 'vehicles.json');
 const ROUTES_FILE_PATH = path.join(__dirname + '/public/', 'trips.json');
 const TRIPS_FILE_PATH = path.join(__dirname + '/public/', 'routes.json');

@@ -41,7 +41,7 @@ async function fetchRecurrentData() {
     }
 }
 
-schedule.scheduleJob('*/10 * * * * *', fetchRecurrentData);
+// schedule.scheduleJob('*/10 * * * * *', fetchRecurrentData);
 
 async function fetchLateData() {
     //routes
@@ -134,7 +134,7 @@ async function fetchLateData() {
         console.error(error);
     }
 }
-schedule.scheduleJob('0 0 0 * * *', fetchLateData);
+// schedule.scheduleJob('0 0 0 * * *', fetchLateData);
 
 app.get('/vehicles', (req, res) => {
     fs.readFile(VEHICLES_FILE_PATH, 'utf8', (err, data) => {
